@@ -1,0 +1,30 @@
+{
+  "name": "digio-task",
+  "version": "1.0.1",
+  "description": "Node.js HTTP Request Parsing task with ES6, Jest, ESLint, and Prettier",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "clean": "",
+    "build-babel": "",
+    "build": "",
+    "start": "node ./src/index.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "format:check": "prettier --list-different \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint --fix \"src/**/*.js\""
+  },
+  "author": {
+    "name": "David Osburn"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
