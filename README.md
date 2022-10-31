@@ -3,7 +3,7 @@ Node.js HTTP Request Parsing task with ES6, Jest, ESLint, and Prettier
 
 ## Background
 
-To-do
+A Programming task assigned by DigIO for Parsing HTTP Requests from a log file.
 
 ## Scripts
 
