@@ -3,7 +3,7 @@ Node.js HTTP Request parsing task with ES6, Jest, ESLint, and Prettier
 
 ## Background
 
-A programming task assigned by DigIO for Parsing HTTP Requests from a log file
+A programming task assigned by DigIO for parsing HTTP Requests from a log file
 
 ## Scripts
 
@@ -30,15 +30,15 @@ npm run format:check
 ## Details
 
 `src/`
-    `index.js` - is the entry point for the program
-    `functions.js` - contains the main logic for the program including parsing, finding unique IP Addresses, finding the top 3 most visited URLS and the top 3 most active IP Addresses
-    `validations.js` - contains some validation functions for checking data in `functions.js`
+- `index.js` - is the entry point for the program
+- `functions.js` - contains the main logic for the program including parsing, finding unique IP Addresses, finding the top 3 most visited URLS and the top 3 most active IP Addresses
+- `validations.js` - contains some validation functions for checking data in `functions.js`
 
 `logs/`
-    `programming-task-example-data.log` - a log file provided by DigIO, used as the basis for parsing and performing a variety of other functions
+- `programming-task-example-data.log` - a log file provided by DigIO, used as the basis for parsing and performing a variety of other functions
 
 `__test__`
-    `functions.test.js` - contains some basic unit tests for each function in `functions.js` using Jest
+- `functions.test.js` - contains some basic unit tests for each function in `functions.js` using Jest
 
 
 ## Assumptions
