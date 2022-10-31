@@ -27,6 +27,20 @@ npm run format
 npm run format:check
 ```
 
+## Details
+
+`src/`
+    `index.js` - is the entry point for the program
+    `functions.js` - contains the main logic for the program including parsing, finding unique IP Addresses, finding the top 3 most visited URLS and the top 3 most active IP Addresses
+    `validations.js` - contains some validation functions for checking data in `functions.js`
+
+`logs/`
+    `programming-task-example-data.log` - a log file provided by DigIO, used as the basis for parsing and performing a variety of other functions
+
+`__test__`
+    `functions.test.js` - contains some basic unit tests for each function in `functions.js` using Jest
+
+
 ## Assumptions
 
 - All logs only follow the format given in the example:
