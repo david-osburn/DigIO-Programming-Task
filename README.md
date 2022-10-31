@@ -35,3 +35,4 @@ npm run format:check
 - The terms `most visited` and `most active` refer to the frequency in which an item occurs in a given log file, irrespective of the date or time accessed
 - The status of a HTTP Request response does not matter (e.g `200`, `404`, `500`, `307`, `301`) and does not nullify most visited / most active counts
 - Data from the log files does not need to be cleaned, an error should be displayed if it is invalid and it is up to the user to provide a valid log file
+- The additional metadata at the end of the HTTP request is not relevant to the problem / task
