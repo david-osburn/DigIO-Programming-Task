@@ -43,10 +43,22 @@ npm run format:check
 
 ## Assumptions
 
+- Given the context of the technical interview (A React Native / Node.js / Vue.js position), I assumed it was preferred that I use Javascript to perform the task. Note: Python was my first instinct since I studied data analytics as a submajor at UTS and am comfortable manipulating files/data with it, but decided against using it. 
+- The application should be console based since the languages specified are typically used for backend
 - All logs only follow the format given in the example:
 `177.71.128.21 - - [10/Jul/2018:22:21:28 +0200] "GET /intranet-analytics/ HTTP/1.1" 200 3574`
 - URLs are permitted to be a path such as `/intranet-analytics/` and aren't required to be a complete URL e.g. `https://www.example.net`
 - The terms `most visited` and `most active` refer to the frequency in which an item occurs in a given log file, irrespective of the date or time accessed
+- Most visited and most active addresses can be tied first, second and third
+- The URL `http://example.net/faq/` and `/faq/` were assumed to be the same url, so were summed together for the frequency count
 - The status of a HTTP Request response does not matter (e.g `200`, `404`, `500`, `307`, `301`) and does not nullify most visited / most active counts
 - Data from the log files does not need to be cleaned, an error should be displayed if it is invalid and it is up to the user to provide a valid log file
-- The additional metadata at the end of the HTTP request is not relevant to the problem / task
+- The additional metadata at the end of the HTTP request is not relevant to the problem / task.
+
+## Weaknesses in my code
+
+Given more time, there are some things that I would fix:
+- Adding additional validation / error handling - checking log file input validity, checking url validity, more stringent error handling everywhere
+- Optimising code - particularly in the formatTopThreeResults() function, it's far from perfect in terms of Big O and elegancy / cleanliness
+- Adding greater test coverage - currently the unit tests only cover the most basic testcases, I need to also build tests for unexpected inputs / edge cases etc. to ensure that my code is more robust
+- Clarifying requirements with DigIO - particularly with "most visited" and "most active" terms as well as whether to include URLs with client error response codes (404), server error responses (500) and redirection messages (30X). Overall, I need to ensure that I am solving the end user's problem and not my own problem
