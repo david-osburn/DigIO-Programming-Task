@@ -62,4 +62,4 @@ Given more time, there are some things that I would fix:
 - Optimising code - particularly in the formatTopThreeResults() function, it's far from perfect in terms of Big O and elegancy / cleanliness
 - Adding greater test coverage - currently the unit tests only cover the most basic testcases, I need to also build tests for unexpected inputs / edge cases etc. to ensure that my code is more robust
 - Clarifying requirements with DigIO - particularly with "most visited" and "most active" terms as well as whether to include URLs with client error response codes (404), server error responses (500) and redirection messages (30X). Overall, I need to ensure that I am solving the end user's problem and not my own problem
-- Continous integration tests - could have the tests run on Jenkins through GitLab or move code to GitLab and use their build in CI/CD
+- Continous integration tests - could have the tests run on Jenkins through GitHub or move code to GitLab and use their build in CI/CD
